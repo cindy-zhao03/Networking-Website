@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!--Top Navigation Bar with search bar -->
+<div class="topnav">
+  <a class="active" href="#home">User Profile</a>
+      <input type="text" placeholder="Search.."> 
+  <div class="topnav-right">
+    <a href="#settings">Settings</a>
+  </div>
+</div>
+<br><br>
+
+<!--User Profile Jeremy-->
+<div class="card">
+  <h4><b>Safeguard Company</b></h4>
+  <img id="user profile"
+src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+    height="100px" width="100px" position="absolute" />
+  <div class="container">
+    <h4><b>Jeremy Doe</b></h4> 
+    <p>Finance Manager</p> 
+  </div>
+</div>
+
+<!--User Profile Lexi Dixon-->
+<div class="card">
+  <h4><b>Hospital</b></h4>
+  <img id="user profile"
+src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+    height="100px" width="100px" position="absolute" />
+  <div class="container">
+    <h4><b>Lexi Dixon</b></h4> 
+    <p>Radiology Technologist</p> 
+  </div>
+</div>
+
+<!--User Profile Christian Wright-->
+<div class="card">
+  <h4><b>Lights Company</b></h4>
+  <img id="user profile"
+src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+    height="100px" width="100px" position="absolute" />
+  <div class="container">
+    <h4><b>Christian Wright</b></h4> 
+    <p>Law Attorney</p>
+  </div>
+</div>
+
+<!--User Profile Kate Moor-->
+<div class="card">
+  <h4><b>Engineering Company</b></h4>
+  <img id="user profile"
+src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+    height="100px" width="100px"/>
+  <div class="container">
+    <h4><b>Kate Moor</b></h4> 
+    <p>Buisness Owner</p> 
+  </div>
+</div>
+
+<!--User Profile Jeremy 2-->
+<div class="card">
+  <h4><b>Safeguard Company</b></h4>
+  <img id="user profile"
+src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+    height="100px" width="100px" position="absolute" />
+  <div class="container">
+    <h4><b>Jeremy Doe</b></h4> 
+    <p>Finance Manager</p> 
+  </div>
+</div>
+
+<!--User Profile Lexi Dixon 2-->
+<div class="card">
+  <h4><b>Hospital</b></h4>
+  <img id="user profile"
+src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+    height="100px" width="100px" position="absolute" />
+  <div class="container">
+    <h4><b>Lexi Dixon</b></h4> 
+    <p>Radiology Technologist</p> 
+  </div>
+</div>
+
+<!--User Profile Christian Wright 2-->
+<div class="card">
+  <h4><b>Lights Company</b></h4>
+  <img id="user profile"
+src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+    height="100px" width="100px" position="absolute" />
+  <div class="container">
+    <h4><b>Christian Wright</b></h4> 
+    <p>Law Attorney</p>
+  </div>
+</div>
+
+<!--User Profile Kate Moor 2-->
+<div class="card">
+  <h4><b>Engineering Company</b></h4>
+  <img id="user profile"
+src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+    height="100px" width="100px"/>
+  <div class="container">
+    <h4><b>Kate Moor</b></h4> 
+    <p>Buisness Owner</p> 
+  </div>
+</div>
+  
+<!--Modals-->
+<body onload="openingModal()">
+  <!--Starting Modal-->
+  <div id="startModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+
+        <!-- makes welcome in the center-->
+        <style>
+          h2 {
+            text-align: center;
+          }
+          p {
+            text-align:center;
+          }
+        </style>
+
+        <h2>Welcome to WorkingYourNet!</h2>
+      </div>
+      <div class="modal-body">
+        <p>We will take you through a brief new user tutorial. Click on "Next" to proceed after each popup. Click on the "x" button now to cancel the tutorial.</p>
+      </div>
+      <div class="modal-footer">
+        <button id="homebtn" class="modal-button">Next</button>
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <!-- Home Modal -->
+  <div id="homeModal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <p>This is the home page. Here you can view different users' workplace, name, and job position.</p>
+      <button id="searchMbtn">Next</button>
+    </div>
+  </div>
+
+  <!--Search Modal-->
+  <div id="searchModal">
+    <div class="modal-content">
+      <p>Use the Search bar to look for specific users.</p>
+      <button id="sortMbtn">Next</button>
+    </div>
+  </div>
+
+  <!--Sort Modal-->
+  <div id="sortModal">
+    <div class="modal-content">
+      <p>Sort through pages of users using the "next" and "previous" buttons.</p>
+      <button id="myUserMbtn">Next</button>
+    </div>
+  </div>
+
+  <!--My User Modal-->
+  <div id="myUserModal">
+    <div class="modal-content">
+      <p>Access your own profile by clicking on "User Profile" on the top left corner of the navigation bar.</p>
+      <button id="settingsMbtn">Next</button>
+    </div>
+  </div>
+
+  <!--Settings Modal-->
+  <div id="settingsModal">
+    <div class="modal-content">
+      <p>Settings is found in the upper right corner of the navigation bar. In your settings, you can access your account preferences, sign in, and notifications. </p>
+      <button id="closingMbtn">Next</button>
+    </div>
+  </div>
+
+  <!--Closing Modal-->
+  <div id="closingModal">
+    <div class="modal-content">
+      <p>You have now completed our new user tutorial. Have fun networking!
+      </p>
+      <button id="closeIt">Got it!</button>
+    </div>
+  </div>
+
+<script>
+  // Get the modals
+  var home_modal = document.getElementById("homeModal");
+  var search_modal = document.getElementById("searchModal");
+  var sort_modal = document.getElementById("sortModal");
+  var myUser_modal = document.getElementById("myUserModal");
+  var settings_modal = document.getElementById("settingsModal");
+  var closing_modal = document.getElementById("closingModal");
+
+  // Get the button that opens the modal
+  var home_btn = document.getElementById("homebtn");
+  var search_btn = document.getElementById("searchMbtn");
+  var sort_btn = document.getElementById("sortMbtn");
+  var myUser_btn = document.getElementById("myUserMbtn");
+  var settings_btn = document.getElementById("settingsMbtn");
+  var closingM_btn = document.getElementById("closingMbtn");
+  var closebtn = document.getElementById("closeIt");
+
+  function openingModal() {
+    // Get the STARTING modal
+    var modal = document.getElementById("startModal");
+    modal.style.display = "block";
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    home_btn.onclick = function () {
+      modal.style.display = "none";
+      // When the user clicks the button, open the modal 
+      home_modal.style.display = "block";
+    }
+
+    search_btn.onclick = function () {
+      home_modal.style.display = "none";
+      search_modal.style.display = "block";
+    }
+
+    sort_btn.onclick = function () {
+      search_modal.style.display = "none";
+      sort_modal.style.display = "block";
+    }
+
+    myUser_btn.onclick = function () {
+      sort_modal.style.display = "none";
+      myUser_modal.style.display = "block";
+    }
+
+    settings_btn.onclick = function () {
+      myUser_modal.style.display = "none";
+      settings_modal.style.display = "block";
+    }
+
+    closingM_btn.onclick = function () {
+      settings_modal.style.display = "none";
+      closing_modal.style.display = "block";
+    }
+  }
+
+  closebtn.onclick = function () {
+    closing_modal.style.display = "none";
+  }
+
+</script>
+
+<!--Next and Previous button-->
+<a href="#" class="previous round"> << Previous </a>
+<a href="#" class="next round"> Next >> </a>
